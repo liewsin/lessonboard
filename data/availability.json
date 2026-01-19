@@ -1,11 +1,12 @@
+
 {
   "schedule": [
-    { "day": "Sunday", "slots": ["2 PM", "4 PM"] },
-    { "day": "Monday", "slots": ["No slots"] },
-    { "day": "Tuesday", "slots": ["10 AM", "4 PM"] },
-    { "day": "Wednesday", "slots": ["2 PM"] },
-    { "day": "Thursday", "slots": ["5 PM"] },
-    { "day": "Friday", "slots": ["3 PM", "4 PM"] },
-    { "day": "Saturday", "slots": ["9 AM", "11 AM"] }
+    {"day": "Sunday", "slots": ["2 PM", "4 PM"]},
+    {"day": "Monday", "slots": []},
+    {"day": "Tuesday", "slots": ["10 AM", "4 PM"]},
+    {"day": "Wednesday", "slots": ["2 PM"]},
+    {"day": "Thursday", "slots": ["5 PM"]},
+    {"day": "Friday", "slots": ["3 PM", "4 PM"]},
+    {"day": "Saturday", "slots": ["9 AM", "11 AM"]}
   ]
 }
