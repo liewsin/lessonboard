@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Swim Chicken Aquatic</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav>
+            <img
+                src="images/logo.jpg"
+                alt="SwimChicken: At-home swim lesson in Cheras, Ampang, Kuala Lumpur"
+                width="50"
+            />
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#availability">Availability</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="home">
+            <h1>Safety First, Love Foremost</h1>
+            <p>
+                Where safety fuels confidence, love elevates motivation. [cite:
+                2]
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Our Swimming Programs</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="icon">👶</div>
+                    <h3>Baby & Parent</h3>
+                    <p>
+                        Gentle water-play and early swim skills, guided
+                        step-by-step with a parent[cite: 4].
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Survival Skills</h3>
+                    <p>
+                        Skills that minimize incidents during water activities,
+                        such as snorkeling[cite: 5].
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🏊</div>
+                    <h3>Learn-To-Swim</h3>
+                    <p>
+                        Basic swimming strokes in a personalized order based on
+                        your needs and adaptability[cite: 6].
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🚀</div>
+                    <h3>Next Level</h3>
+                    <p>
+                        Stroke corrections, advanced drills, squad training, or
+                        lifeguard prep[cite: 7].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages">
+            <h2>Choose Your Lesson Package</h2>
+            <p class="subtitle">
+                All lessons include a free trial, 60-minute duration, and occur
+                at your pool[cite: 8, 11, 14].
+            </p>
+
+            <div class="package-container">
+                <div class="package-card">
+                    <h3>Flexi Option</h3>
+                    <p class="price">RM150 <span>/ lesson</span></p>
+                    <ul>
+                        <li>No long-term commitment [cite: 10]</li>
+                        <li>Invite guests to join for free [cite: 9]</li>
+                        <li>Valid for 1 week [cite: 9]</li>
+                    </ul>
+                </div>
+
+                <div class="package-card popular">
+                    <div class="badge">Most Popular</div>
+                    <h3>Popular Option</h3>
+                    <p class="price">RM125 <span>/ lesson</span></p>
+                    <p class="total">RM500 total for 4 lessons [cite: 13]</p>
+                    <ul>
+                        <li>Save more with 4 lessons [cite: 13]</li>
+                        <li>Invite guests to join for free [cite: 12]</li>
+                        <li>Valid for 6 weeks [cite: 12]</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <h3>Private Lessons</h3>
+                    <p class="price">RM100 <span>/ lesson</span></p>
+                    <p class="total">RM400 total for 4 lessons [cite: 15]</p>
+                    <ul>
+                        <li>One-on-one instruction [cite: 15]</li>
+                        <li>Personalized lesson plan [cite: 14]</li>
+                        <li>Valid for 6 weeks [cite: 15]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="snapshot">
+            <h2>Snapshot</h2>
+            <div class="carousel-container">
+                <img src="images/snapshots/1.jpg" alt="Snapshot 1" />
+                <img src="images/snapshots/2.jpg" alt="Snapshot 2" />
+            </div>
+        </section>
+
+        <section id="availability">
+            <h2>Check Real-Time Availability</h2>
+            <p>For trial or catch-up lessons only.</p>
+            <div id="schedule-container">
+                <p>Loading times...</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+
+            <div class="whatsapp-container">
+                <a href="https://wa.me/60103086286" class="whatsapp-btn">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <p>Or send us an email:</p>
+
+            <form id="contactForm" action="contact-handler.php" method="POST">
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Full Name (Required)"
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email (Required)"
+                    required
+                />
+                <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number (Required)"
+                    required
+                />
+                <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Pool Address (Optional)"
+                />
+                <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your Message (Optional)"
+                ></textarea>
+
+                <button type="submit" id="submitBtn">Send Message</button>
+                <p id="formFeedback"></p>
+            </form>
+        </section>
+    </body>
+</html>
