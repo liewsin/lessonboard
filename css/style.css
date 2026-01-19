@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2b569e; /* The blue from your logo */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Introduction Section */
+#home {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f7fa;
+}
+
+#home h1 {
+    font-size: 1.8rem;
+    color: #2b569e;
+    margin-bottom: 10px;
+}
+
+/* Availability Section  */
+#availability {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#availability h2 {
+    text-align: center;
+    color: #2b569e;
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.schedule-row strong {
+    color: #2b569e;
+}
+
+/* Contact Section Container */
+#contact {
+    padding: 60px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #2b569e;
+    margin-bottom: 20px;
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-container {
+    margin-bottom: 30px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+/* Form Styling */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+#contactForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+#submitBtn {
+    background-color: #2b569e; /* Brand Blue */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #1a3a6e;
+}
+
+/* Feedback Message */
+#formFeedback {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section  */
+/* Container for Services */
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #2b569e;
+    margin: 10px 0;
+}
+
+.service-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Tablet: 2 Columns */
+@media (min-width: 600px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop: 4 Columns */
+@media (min-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Packages Section  */
+/* Container for the cards */
+.package-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: 1 column (rows) for mobile */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.package-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlight the Popular Option */
+.package-card.popular {
+    border: 2px solid #2b569e;
+    transform: scale(1.05);
+}
+
+.badge {
+    background: #2b569e;
+    color: white;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b569e;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Desktop Version: Switch to 3 Columns */
+@media (min-width: 768px) {
+    .package-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    }
+}
+
+/* Snapshots Section  */
+#snapshot {
+    padding: 40px 0; /* No side padding so photos touch the edges */
+    background-color: #fff;
+}
+
+#snapshot h2 {
+    text-align: center;
+    color: #2b569e;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Makes photos "snap" to the center */
+    gap: 15px;
+    padding: 0 20px;
+    scrollbar-width: none; /* Hides scrollbar for a cleaner look */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container img {
+    flex: 0 0 80%; /* Shows 80% of the photo so users see the next one is there */
+    width: 80%;
+    height: 300px;
+    object-fit: cover; /* Crops image to fit without stretching */
+    border-radius: 15px;
+    scroll-snap-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
